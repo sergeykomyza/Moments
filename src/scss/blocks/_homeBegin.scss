@@ -1,0 +1,43 @@
+.home-begin{
+  position: relative;
+  z-index: 1;
+  height: 106.7rem;
+
+  &__bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__path{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__noise{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__box{
+    position: relative;
+    padding-top: 22.5rem;
+  }
+
+  &__title{
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 9rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+}

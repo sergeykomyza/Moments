@@ -1,0 +1,24 @@
+// global include
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;600;700&display=swap');
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/Gilroy-Regular.eot');
+	src: local('../fonts/Gilroy/Gilroy Regular'),
+			url('../fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+			url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/Gilroy-SemiBold.eot');
+	src: local('../fonts/Gilroy/Gilroy SemiBold'),
+			url('../fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
+			url('../fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}

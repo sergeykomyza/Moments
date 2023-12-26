@@ -1,0 +1,24 @@
+.header{
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 6rem;
+
+  &__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo{
+  width: 23.3rem;
+}
+
+.burger{
+  img{
+    width: 5rem;
+  }
+}
