@@ -1,0 +1,14 @@
+section.home-organization 
+	img.noise(src="img/noise.webp", alt="@")
+	.home-organization__box 
+		picture
+			source(media="(max-width: 768px)", srcset="img/svg/decor-1-mobile.svg")
+			img.home-organization__decor(src="img/svg/decor-1.svg", alt="") 
+		.desktop
+			.home-organization__title #[span.home-organization__title--padding Организация] #[br] такого важного #[br] #[span.home-organization__title--padding мероприятия] #[span.home-organization__title--tire -]
+			p.home-organization__tagtitle это искусство, процесс, в котором всё должно быть идеально организованно, учтены все детали, #[br] #[span.home-organization__tagtitle--padding предпочтения], чтобы получился максимально эмоциональный #[br] #[span.home-organization__tagtitle--padding и] неожиданный результат!
+		.mobile 
+			.home-organization__title Организация такого #[br] #[span.home-organization__title--padding важного] #[br] #[span.home-organization__title--padding мероприятия] #[span.home-organization__title--tire -]
+			p.home-organization__tagtitle это искусство, процесс, в котором всё #[span.home-organization__tagtitle--padding должно] быть идеально организованно, учтены все детали, предпочтения, #[span.home-organization__tagtitle--padding чтобы] получился максимально эмоциональный и неожиданный результат!
+		.home-organization__padding 
+			include ./../layouts/_buttonVibratScenariy.pug

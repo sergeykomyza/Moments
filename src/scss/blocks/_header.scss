@@ -5,20 +5,36 @@
   left: 0;
   width: 100%;
   padding-top: 6rem;
+  @include mediaWidth1{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
   &__box{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 160rem;
+	  margin: 0 auto;
+    @include mediaWidth1{
+      width: 100%;
+    }
   }
 }
 
 .logo{
   width: 23.3rem;
+  @include mediaWidth1{
+    width: 10.2rem;
+  }
 }
 
 .burger{
   img{
     width: 5rem;
+    @include mediaWidth1{
+      width: 3rem;
+    }
   }
 }

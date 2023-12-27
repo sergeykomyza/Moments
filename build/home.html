@@ -11,17 +11,43 @@
     <title>Site | Главная</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container"> 
-        <div class="header__box"> <img class="logo" src="img/svg/logo.svg" alt="@"/>
-          <button class="burger js-toggleMenu"> <img src="img/svg/burger.svg" alt="@"/></button>
-        </div>
+    <header class="header"> 
+      <div class="header__box"> <img class="logo" src="img/svg/logo.svg" alt="@"/>
+        <button class="burger js-toggleMenu"> <img src="img/svg/burger.svg" alt="@"/></button>
       </div>
     </header>
-    <section class="home-begin"> <img class="home-begin__bg" src="img/home-begin-bg.webp" alt="@"/><img class="home-begin__path" src="img/home-begin-bg-path.webp" alt="@"/><img class="home-begin__noise" src="img/noise.webp" alt="@"/>
-      <div class="container"> 
-        <div class="home-begin__box"> 
-          <h1 class="home-begin__title">Организация <br/> ваших лучших <br/> эмоций</h1>
+    <section class="home-begin">
+      <picture>
+        <source media="(max-width: 768px)" srcset="img/home-begin-bg-mobile.webp"/><img class="home-begin__bg" src="img/home-begin-bg.webp" alt="@"/>
+      </picture><img class="home-begin__path" src="img/home-begin-bg-path.webp" alt="@"/><img class="noise" src="img/noise.webp" alt="@"/>
+      <div class="home-begin__box">
+        <div class="home-begin__content"> 
+          <h1 class="home-begin__title">Организация ваших лучших эмоций</h1>
+          <p class="home-begin__tagtitle">Профессионально воплотим в жизнь праздник вашей мечты</p>
+        </div>
+        <div class="home-begin__phone"> <a class="home-begin__phoneicon" href="#"><img src="img/svg/phone.svg" alt="@"/></a></div>
+      </div>
+    </section>
+    <section class="home-organization"> <img class="noise" src="img/noise.webp" alt="@"/>
+      <div class="home-organization__box"> 
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/svg/decor-1-mobile.svg"/><img class="home-organization__decor" src="img/svg/decor-1.svg" alt=""/>
+        </picture>
+        <div class="desktop">
+          <div class="home-organization__title"><span class="home-organization__title--padding">Организация</span> <br/> такого важного <br/> <span class="home-organization__title--padding">мероприятия</span> <span class="home-organization__title--tire">-</span></div>
+          <p class="home-organization__tagtitle">это искусство, процесс, в котором всё должно быть идеально организованно, учтены все детали, <br/> <span class="home-organization__tagtitle--padding">предпочтения</span>, чтобы получился максимально эмоциональный <br/> <span class="home-organization__tagtitle--padding">и</span> неожиданный результат!</p>
+        </div>
+        <div class="mobile"> 
+          <div class="home-organization__title">Организация такого <br/> <span class="home-organization__title--padding">важного</span> <br/> <span class="home-organization__title--padding">мероприятия</span> <span class="home-organization__title--tire">-</span></div>
+          <p class="home-organization__tagtitle">это искусство, процесс, в котором всё <span class="home-organization__tagtitle--padding">должно</span> быть идеально организованно, учтены все детали, предпочтения, <span class="home-organization__tagtitle--padding">чтобы</span> получился максимально эмоциональный и неожиданный результат!</p>
+        </div>
+        <div class="home-organization__padding"> 
+          <div class="button-box">
+            <button class="button">Выбрать сценарий</button>
+            <svg class="button__line" viewBox="0 0 593 147" fill="none">
+              <path d="M401.298 2C401.298 2 324.293 13.0373 274.634 17.8611C216.901 23.4692 126.31 27.4613 126.31 27.4613C126.31 27.4613 251.767 25.0755 332.08 27.4613C433.821 30.4836 592 44.992 592 44.992C592 44.992 388.863 37.3697 259.566 48.0878C176.761 54.9519 48.6161 73.9665 48.6161 73.9665C48.6161 73.9665 167.209 67.0004 243.085 70.2099C288.45 72.1288 358.919 79.3927 358.919 79.3927C358.919 79.3927 275.832 70.1886 222.367 70.6101C164.915 71.0631 75.9266 83.1492 75.9266 83.1492C75.9266 83.1492 116.286 82.4073 141.848 85.2362C162.496 87.5213 194.115 94.419 194.115 94.419C194.115 94.419 159.649 95.5316 137.611 96.9234C115.69 98.3077 81.577 101.515 81.577 101.515L133.844 117.793L15.6552 121.132L90.9944 134.072C90.9944 134.072 63.5921 134.396 46.2618 136.576C28.7261 138.782 2 145.342 2 145.342" stroke="#E3DED8" stroke-width="2.50439" stroke-linecap="round"></path>
+            </svg>
+          </div>
         </div>
       </div>
     </section>

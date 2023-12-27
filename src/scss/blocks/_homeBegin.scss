@@ -3,12 +3,18 @@
   z-index: 1;
   height: 106.7rem;
 
+  @include mediaWidth1{
+    height: 55rem;
+  }
+
   &__bg{
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__path{
@@ -19,25 +25,91 @@
     width: 100%;
   }
 
-  &__noise{
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-
   &__box{
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 160rem;
+    height: 100%;
+	  margin: 0 auto;
     padding-top: 22.5rem;
+    @include mediaWidth1{
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  &__content{
+    width: 70rem;
+    @include mediaWidth1{
+      width: 100%;
+      width: 30rem;
+    }
   }
 
   &__title{
+    margin-bottom: 7rem;
     font-size: 8rem;
     font-weight: 700;
     line-height: 9rem;
     letter-spacing: 0.8px;
     text-transform: uppercase;
+    @include mediaWidth1{
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      line-height: normal;
+      letter-spacing: 0.25px;
+      text-align: right;
+    }
   }
 
+  &__tagtitle{
+    font-size: 3.2rem;
+    @include mediaWidth1{
+      font-size: 1.2rem;
+      text-align: right;
+    }
+  }
+
+  &__phone{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9rem;
+    transform: translate(2.5rem, -4.5rem);
+    &:before{
+      content: '';
+      display: block;
+      width: 0.3rem;
+      height: 50rem;
+      background: var(--color-0);
+    }
+    @include mediaWidth1{
+      display: none;
+    }
+  }
+
+  &__phoneicon{
+    img{
+      width: 9rem;
+    }
+  }
+
+}
+
+.noise{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }

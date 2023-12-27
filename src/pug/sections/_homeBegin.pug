@@ -1,7 +1,13 @@
-section.home-begin 
-  img.home-begin__bg(src="img/home-begin-bg.webp", alt="@")
+section.home-begin
+  picture
+    source(media="(max-width: 768px)", srcset="img/home-begin-bg-mobile.webp")
+    img.home-begin__bg(src="img/home-begin-bg.webp", alt="@")
   img.home-begin__path(src="img/home-begin-bg-path.webp", alt="@")
-  img.home-begin__noise(src="img/noise.webp", alt="@")
-  .container 
-    .home-begin__box 
-      h1.home-begin__title Организация #[br] ваших лучших #[br] эмоций
+  img.noise(src="img/noise.webp", alt="@")
+  .home-begin__box
+    .home-begin__content 
+      h1.home-begin__title Организация ваших лучших эмоций
+      p.home-begin__tagtitle Профессионально воплотим в жизнь праздник вашей мечты
+    .home-begin__phone 
+      a.home-begin__phoneicon(href="#")
+        img(src="img/svg/phone.svg", alt="@") 

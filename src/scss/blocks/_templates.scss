@@ -7,11 +7,17 @@
   .dark-bg{
     padding: 10rem;
     background: #000;
+    @include mediaWidth1{
+      padding: 2rem;
+    }
   }
 
   .grey-bg{
     padding: 10rem;
     background: grey;
+    @include mediaWidth1{
+      padding: 2rem;
+    }
   }
 
 }
@@ -37,11 +43,22 @@
   height: 7.5rem;
   padding: 0 2.2rem;
   font-size: 3.2rem;
+  @include mediaWidth1{
+    height: 3.1rem;
+    padding: 0.9rem;
+    font-size: 1.34rem;
+  }
   &__line{
     position: absolute;
     z-index: 1;
     left: -4.7rem;
     top: -4.4rem;
+    width: 59.3rem;
+    @include mediaWidth1{
+      left: -1.8rem;
+	    top: -1.9rem;
+      width: 24.7rem;
+    }
   }
 }
 
@@ -52,6 +69,9 @@
   font-size: 3.2rem;
   border: 3px solid var(--color-1);
   @include mediaWidth1{
+    height: 3rem;
+    padding: 0 0.9rem;
+    font-size: 1.3rem;
     border: 1px solid var(--color-1);
   }
   &__line{
@@ -59,6 +79,12 @@
     z-index: 1;
     left: -4.4rem;
     top: -4.8rem;
+    width: 57.7rem;
+    @include mediaWidth1{
+      left: -1.7rem;
+      top: -2rem;
+      width: 23.2rem;
+    }
   }
 }
 
@@ -69,6 +95,9 @@
   font-size: 3.2rem;
   border: 2px solid var(--color-1);
   @include mediaWidth1{
+    height: 3rem;
+    padding: 0 1.5rem;
+    font-size: 1.7rem;
     border: 1px solid var(--color-1);
   }
   &__line{
@@ -76,6 +105,12 @@
     z-index: 1;
     left: -3.2rem;
     top: -3.7rem;
+    width: 39.2rem;
+    @include mediaWidth1{
+      left: -1.3rem;
+	    top: -2rem;
+      width: 20.5rem;
+    }
   }
 }
 
@@ -85,11 +120,22 @@
   padding: 0 2.4rem;
   font-size: 1.8rem;
   border: 1px solid var(--color-1);
+  @include mediaWidth1{
+    height: 1.8rem;
+    padding: 0 1.4rem;
+    font-size: 1rem;
+  }
   &__line{
     position: absolute;
     z-index: 1;
     left: -1.2rem;
     top: -2.2rem;
+    width: 16.7rem;
+    @include mediaWidth1{
+      left: -0.6rem;
+      top: -1.2rem;
+      width: 8.9rem;
+    }
   }
 }
 
@@ -100,6 +146,9 @@
   font-size: 3.2rem;
   border: 2px solid #605550;
   @include mediaWidth1{
+    height: 2.5rem;
+    padding: 0 0.6rem;
+    font-size: 1.4rem;
     border: 1px solid var(--color-1);
   }
   &__line{
@@ -107,6 +156,12 @@
     z-index: 1;
     left: -6rem;
     top: -3.7rem;
+    width: 81.1rem;
+    @include mediaWidth1{
+      left: -1.7rem;
+      top: -1.7rem;
+      width: 35.3rem;
+    }
   }
 }
 

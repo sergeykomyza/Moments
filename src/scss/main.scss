@@ -36,11 +36,12 @@ h1,h2,h3,h4,h5,h6{
 	font-family: var(--font-1);
 }
 html{ 
-	// font-size: 10px;
 	font-size: 0.520833vw;
 	overflow-x: hidden;
+
 	@include mediaWidth1{
-		font-size: 1.0779vw;
+		// font-size: 10px;
+		font-size: 2.5641vw;
 	}
 	&.fixed{
 		overflow: hidden;
@@ -86,10 +87,18 @@ input, textarea{
 	}
 }
 
-.container{
-	width: 160rem;
-	margin: 0 auto;
+.mobile{
+	display: none;
+	@include mediaWidth1{
+		display: inline-block;
+	}
 }
+.desktop{
+	@include mediaWidth1{
+		display: none;
+	}
+}
+
 // ~~~~~~~~~~~~~~~~~~~ Стилизация скроллбара
 * ::-webkit-scrollbar {
     width: 6px; /* ширина всей полосы прокрутки */
@@ -148,3 +157,4 @@ input, textarea{
 	СТИЛИ КОТОРЫЕ НЕ ПОВТОРЯЮТСЯ НА ДРУГИХ СТРАНИЦАХ 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @import 'blocks/homeBegin';
+@import 'blocks/homeOrganization';
