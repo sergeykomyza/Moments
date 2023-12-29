@@ -52,13 +52,23 @@ const inputMask = () => {
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ СЛАЙДЕР SWIPER (https://swiperjs.com/get-started) 
+
+function setSize(){
+    let diffBegin = 1920
+    let viewWidth = window.innerWidth
+    let percent = (viewWidth * 70) / diffBegin
+    console.log(percent)
+    return percent 
+}
+let resPer = setSize()
+setSize()
+window.addEventListener('resize', setSize)
+window.onresize = setSize
+
 const sliders = () => {
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-    
-        // If we need pagination
+    const swiper = new Swiper('.js-sliderReview', {
+        slidesPerView: 4,
+        spaceBetween: resPer,
         pagination: {
             el: '.swiper-pagination',
         },
@@ -69,10 +79,6 @@ const sliders = () => {
             prevEl: '.swiper-button-prev',
         },
     
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
     });
 
 }
@@ -123,6 +129,8 @@ const map = () => {
 
 }
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INIT
+sliders()
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

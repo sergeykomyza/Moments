@@ -1,0 +1,9 @@
+- let count = 1
+ 
+.slider-box
+  .swiper.reviews-slider.js-sliderReview
+    .swiper-wrapper
+      while count < 6
+        .review.swiper-slide
+          img.review__screen(src=`img/reviews/review-${count}.webp`, alt="@")
+          - count += 1
