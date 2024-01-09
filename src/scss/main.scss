@@ -88,10 +88,6 @@ input, textarea{
 	}
 }
 
-.swiper-wrapper{
-	
-}
-
 .mobile{
 	display: none;
 	@include mediaWidth1{
@@ -104,20 +100,7 @@ input, textarea{
 	}
 }
 
-.noise-bg{
-	position: relative;
-}
 
-.noise{
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-	object-fit: cover;
-  pointer-events: none;
-}
 
 // ~~~~~~~~~~~~~~~~~~~ Стилизация скроллбара
 * ::-webkit-scrollbar {
@@ -181,3 +164,4 @@ input, textarea{
 @import 'blocks/categories';
 @import 'blocks/advantages';
 @import 'blocks/reviews';
+@import 'blocks/team';

@@ -5,5 +5,11 @@
     .swiper-wrapper
       while count < 6
         .review.swiper-slide
-          img.review__screen(src=`img/reviews/review-${count}.webp`, alt="@")
+          a(href=`img/reviews/review-${count}.webp` data-fancybox='reviews') 
+            img.review__screen(src=`img/reviews/review-${count}.webp`, alt="@")
           - count += 1
+  button.reviews-slider__arrow
+    picture 
+      source(media="(max-width: 768px)" srcset="img/svg/slider-arrow-mobile.svg")
+      img(src="img/svg/slider-arrow.svg", alt="@")
+  .swiper-pagination

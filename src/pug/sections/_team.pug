@@ -1,0 +1,31 @@
+-
+  const team = [
+    {name: 'Анна Баймухамедова',   status: 'организатор идеальных мероприятий, <br> создает чувственное настроение и стиль'},
+    {name: 'Атаманова Анастасия ', status: 'CEO и идеолог проекта, создает и воплощает <br> в жизнь самые невероятные и сказочные идеи'},
+    {name: 'Елена Шаройко',        status: 'координатор ярких мероприятий, <br> музыкальный оформитель предложений'}
+  ]
+  const shotout = [
+    {name: 'Наталья Чичина',  status: 'самый пунктуальный менеджер <br> по работе с клиентами'},
+    {name: 'Павел Соболев',   status: 'создатель запоминающихся <br> видео с ваших мероприятий'},
+    {name: 'Таша Романова',   status: 'превращает любое пространство <br> в сказку с помощью декора и живых цветов'},
+    {name: 'Дмитрий Куповых', status: 'неутомимый сценарист и режиссер <br> ваших историй отношений'},
+    {name: 'Вита Стройнова',  status: 'создает потрясающий контент <br> с мероприятий для наших соцсетей'},
+    {name: 'Леонид Зеленин',  status: 'ювелир от Бога, помогает вам решить <br> любой вопрос с помолвочным кольцом'}
+  ]
+
+section.team 
+  h4.section-title.team__title наша команда
+  .team__box
+    img.team__foto(src="img/team.webp", alt="@")
+    img.team__ornament(src="img/svg/ornament.svg", alt="@")
+    each item, i in team 
+      div(class=`spec spec-${i}`) 
+        .spec__name= item.name 
+        p.spec__status !{item.status}
+  .team-shotout
+    h5.section-title.team-shotout__title остались за кадром
+    .team-shotout__box 
+      each item in shotout
+        .shotout 
+          .shotout__name= item.name 
+          p.shotout__status !{item.status}

@@ -1,0 +1,156 @@
+.team{
+
+  margin-bottom: 12rem;
+
+  &__title{
+    margin-bottom: 15.7rem;
+    padding-left: 16.6rem;
+    @include mediaWidth1{
+      margin-bottom: 5rem;
+      padding-left: 1.8rem;
+    }
+  }
+
+  &__box{
+    position: relative;
+    width: 164rem;
+    margin: 0 auto 12.5rem auto;
+    @include mediaWidth1{
+      width: 33.3rem;
+      margin: 0 auto 8rem auto;
+    }
+  }
+
+  &__foto{
+    width: 100%;
+  }
+
+  &__ornament{
+    position: absolute;
+    left: -4rem;
+    top: -7.3rem;
+    width: 175rem;
+    @include mediaWidth1{
+      width: 36.3rem;
+      left: -1.5rem;
+      top: -1.9rem;
+    }
+  }
+
+  &-shotout{
+    &__title{
+      margin-bottom: 10rem;
+      padding-left: 16.6rem;
+      @include mediaWidth1{
+        margin-bottom: 5rem;
+        padding-left: 1.8rem;
+      }
+    }
+    &__box{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12rem 0;
+      padding-left: 16.6rem;
+      @include mediaWidth1{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem 0;
+        padding-left: 7rem;
+      }
+    }
+  }
+
+}
+
+.spec{
+  position: absolute;
+  padding-top: 0.5rem;
+  padding-bottom: 1.3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background: var(--color-3);
+  border-radius: 2rem;
+
+  @include mediaWidth1{
+    display: none;
+  }
+  
+  &-0{
+    top: 13.4rem;
+    left: 29.4rem;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -3.7rem;
+      right: 3rem;
+      width: 4.7rem;
+      height: 3.7rem;
+      background: url('../img/triangle-0.png') top left/contain no-repeat;
+    }
+  }
+
+  &-1{
+    top: 15.8rem;
+    left: 74.1rem;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -4.2rem;
+      left: 4.8rem;
+      width: 5.7rem;
+      height: 4.2rem;
+      background: url('../img/triangle-1.png') top left/contain no-repeat;
+    }
+  }
+
+  &-2{
+    left: 68.5rem;
+    bottom: 35.6rem;
+    &:after{
+      content: '';
+      position: absolute;
+      top: -3.9rem;
+      right: 4rem;
+      width: 6rem;
+      height: 3.9rem;
+      background: url('../img/triangle-2.png') top left/contain no-repeat;
+    }
+  }
+  
+  &__name{
+    font-family: var(--font-1);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+  }
+
+  &__status{
+    font-size: 1.2rem;
+    letter-spacing: 0.12px;
+  }
+
+}
+
+.shotout{
+  &__name{
+    font-family: var(--font-1);
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    @include mediaWidth1{
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  &__status{
+    font-size: 2.5rem;
+    letter-spacing: 0.25px;
+    @include mediaWidth1{
+      font-size: 1.6rem;
+      letter-spacing: 0.16px;
+    }
+  }
+}

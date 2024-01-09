@@ -2,10 +2,12 @@
   position: relative;
   padding-top: 7rem;
   padding-bottom: 19rem;
+  
   @include mediaWidth1{
     padding-top: 3rem;
     padding-bottom: 2rem;
   }
+  
   &__title{
     margin-bottom: 10rem;
     padding-left: 16.6rem;
@@ -14,22 +16,77 @@
     letter-spacing: -1.15px;
     text-transform: uppercase;
     @include mediaWidth1{
+      margin-bottom: 3rem;
+      padding-left: 7rem;
       font-size: 2.5rem;
       letter-spacing: 0.25px;
     }
   }
 }
 
+.reviews-slider{
+  
+  &__arrow{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 9rem;
+    @include mediaWidth1{
+      right: 4rem;
+    }
+  }
+  .swiper-wrapper{
+    margin-bottom: 2rem;
+  }
+}
+
 .slider-box{
+  position: relative;
   padding-left: 5rem;
   padding-right: 5rem;
+  @include mediaWidth1{
+    padding-left: 7.4rem;
+    padding-right: 7.4rem;
+  }
 }
 
 .review{
   margin-right: 7rem;
+  a{
+    display: block;
+  }
   &__screen{
     width: 100%;
     height: 84rem;
     object-fit: cover;
+    @include mediaWidth1{
+      height: 49.4rem;
+    }
+  }
+}
+
+.swiper-slide-active + .review + .review + .review{
+  opacity: 0.6;
+}
+
+.swiper-pagination{
+  display: none;
+  @include mediaWidth1{
+    position: static;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    display: flex;
+    &-bullet{
+      width: 0.8rem;
+      height: 0.8rem;
+      margin: 0 0 !important;
+      border: 1px solid var(--color-0);
+      background: transparent;
+      &-active{
+        background: var(--color-0); 
+      }
+    }
   }
 }

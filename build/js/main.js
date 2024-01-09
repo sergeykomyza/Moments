@@ -67,18 +67,21 @@ window.onresize = setSize
 
 const sliders = () => {
     const swiper = new Swiper('.js-sliderReview', {
-        slidesPerView: 4,
-        spaceBetween: resPer,
+        
+        slidesPerView: 1,
+        spaceBetween: 1,
         pagination: {
             el: '.swiper-pagination',
         },
-    
-        // Navigation arrows
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.reviews-slider__arrow',
         },
-    
+        breakpoints: {
+            769: {
+                slidesPerView: 4,
+                spaceBetween: resPer,
+            }
+        }
     });
 
 }
