@@ -1,0 +1,105 @@
+.feedback{
+
+  position: relative;
+  display: flex;
+  gap: 10.6rem;
+  width: 160rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 3.8rem;
+  padding-left: 14rem;
+  background: var(--color-3);
+
+  @include mediaWidth1{
+    flex-direction: column;
+    gap: 0rem;
+    width: 35.3rem;
+    padding-top: 3rem;
+    padding-left: 5.2rem;
+    padding-bottom: 3rem;
+  }
+
+  &-box{
+    padding-bottom: 10rem;
+    @include mediaWidth1{
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__titles{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include mediaWidth1{
+      align-items: flex-start;
+    }
+  }
+
+  &__title{
+    margin-bottom: 2.4rem;
+    font-family: var(--font-1);
+    font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    @include mediaWidth1{
+      font-size: 2.5rem;
+      letter-spacing: 0.25px;
+    }
+  }
+
+  &__icon{
+    width: 13rem;
+    @include mediaWidth1{
+      position: absolute;
+      right: 4rem;
+	    top: 10rem;
+      width: 5.2rem;
+    }
+  }
+
+  &__tagtitle{
+    margin-bottom: 6.5rem;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.32px;
+    @include mediaWidth1{
+      margin-bottom: 2rem;
+      padding-right: 10rem;
+      font-size: 1.6rem;
+      line-height: normal;
+      letter-spacing: 0.16px;
+    }
+  }
+
+  &__group{
+    display: flex;
+    align-items: center;
+    margin-left: 1.1rem;
+    @include mediaWidth1{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5rem;
+      margin-left: 0;
+    }
+  }
+
+  &__input{
+    font-family: var(--font-0);
+    font-size: 3.2rem;
+    color: var(--color-4);
+    background: transparent;
+    border: none;
+    &::placeholder{
+      font-size: 3.2rem;
+      color: var(--color-4);
+    }
+    @include mediaWidth1{
+      font-size: 1.5rem;
+      &::placeholder{
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+}

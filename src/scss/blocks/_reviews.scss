@@ -1,11 +1,11 @@
 .home-reviews{
   position: relative;
   padding-top: 7rem;
-  padding-bottom: 19rem;
+  margin-bottom: 19rem;
   
   @include mediaWidth1{
     padding-top: 3rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
   
   &__title{
@@ -33,6 +33,12 @@
     right: 9rem;
     @include mediaWidth1{
       right: 4rem;
+    }
+    img{
+      width: 25.3rem;
+      @include mediaWidth1{
+        width: 1.35rem;
+      }
     }
   }
   .swiper-wrapper{

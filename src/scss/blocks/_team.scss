@@ -1,6 +1,10 @@
 .team{
 
-  margin-bottom: 12rem;
+  margin-bottom: 22rem;
+
+  @include mediaWidth1{
+    margin-bottom: 9rem;
+  }
 
   &__title{
     margin-bottom: 15.7rem;

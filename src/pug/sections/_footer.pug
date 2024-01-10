@@ -1,1 +1,29 @@
 footer.footer
+  include ./../layouts/_noise.pug
+
+  .mobile 
+    .footer__title Профессиональная организация эксклюзивных мероприятий
+
+  .footer__box
+    .footer__head
+      img.footer__logo(src="img/svg/logo.svg", alt="@")
+      ul.footer__socials 
+        each item in ['whatsapp.svg','vk.svg','youtube.svg']
+          li.footer__social 
+            a.footer__iconlink(href="#")
+              img.footer__icon(src="img/svg/"+item, alt="")  
+    .footer__body
+      .footer__rights
+        span.footer__text ИП 
+        span.footer__text ОГРН
+        span.footer__text Все права защищены #[br.mobile] © 2014-2023
+      nav.footer__navs
+        ul.footer-menu 
+          li.footer-menu__item.footer-menu__item--title #[b Мероприятия:]
+          each item in ['Предложения','Сюрпризы','Годовщины','Свидания','Извинения','Дни рождения','Поздравления','Предложения','Гендер пати','Выписка из роддома']
+            li.footer-menu__item 
+              a.footer-menu__link(href="#")= item 
+        ul.footer-menu 
+          each item in ['Предложение на вертолете','Предложение на яхте','Предложение на крыше','Предложение в Москва сити','Предложение в кинотеатре','Предложение в океанариуме','Предложение флешмоб','Предложение на воздушном шаре','Предложение в парке','Предложение в аэропорту','Экстремальное предложение','Предложение на маяке','Предложение квест']
+            li.footer-menu__item 
+              a.footer-menu__link(href="#")= item 

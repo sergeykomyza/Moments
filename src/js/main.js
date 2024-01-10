@@ -26,33 +26,13 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ МАСКА ДЛЯ ИНПУТОВ (https://github.com/RobinHerbots/Inputmask)
 const inputMask = () => {
     $(".js-maskPhone").inputmask({
-        mask: "+7 999 999 99 99",
+        mask: "+ 7 (999) 999-99-99",
         clearIncomplete: true
-    });
-    $('.email').inputmask({
-        mask: "*{1,20}[.*{1,20}]@*{1,20}.*{2,4}",
-        clearIncomplete: true
-    //     greedy: false,
-    //     onBeforePaste: function (pastedValue, opts) {
-    //         pastedValue = pastedValue.toLowerCase();
-    //         return pastedValue.replace("mailto:", "");
-    //     },
-    //     definitions: {
-    //         '*': {
-    //             validator: "[0-9A-Za-z-а-я-]",
-    //             casing: "lower"
-    //         }
-    //     }
-    });
-    $(".js-maskDate").inputmask({
-        mask: "99/99/9999",
-        clearIncomplete: true,
-        'placeholder': 'dd/mm/yyyy'
     });
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ СЛАЙДЕР SWIPER (https://swiperjs.com/get-started) 
-
+const sliders = () => {
 function setSize(){
     let diffBegin = 1920
     let viewWidth = window.innerWidth
@@ -65,7 +45,7 @@ setSize()
 window.addEventListener('resize', setSize)
 window.onresize = setSize
 
-const sliders = () => {
+
     const swiper = new Swiper('.js-sliderReview', {
         
         slidesPerView: 1,
@@ -133,6 +113,7 @@ const map = () => {
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INIT
+inputMask()
 sliders()
 
 
