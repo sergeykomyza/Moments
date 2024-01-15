@@ -1,4 +1,5 @@
 section.categories
-  each item in ['Предложения','Сюрпризы','Годовщины','Свидания','Извинения','Дни рождения','Поздравления','Гендер пати']
+  each item, i in ['Предложения','Сюрпризы','Годовщины','Свидания','Извинения','Дни рождения','Поздравления','Гендер пати']
     a(href="#").category.category--border 
       .category__name= item
+      img.category__foto(src=`img/category-${i+1}.webp`, alt="@")
