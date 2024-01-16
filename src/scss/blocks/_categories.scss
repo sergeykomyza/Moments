@@ -13,8 +13,10 @@
   align-items: center;
   justify-content: center;
   height: 45rem;
+  padding: 0 4rem;
   @include mediaWidth1{
     height: 18.3rem;
+    padding: 0 2rem;
   }
 
   &__name{
@@ -23,6 +25,7 @@
     text-transform: uppercase;
     letter-spacing: -0.39px;
     color: var(--color-0);
+    text-align: center;
     @include mediaWidth1{
       font-size: 1.6rem;
       letter-spacing: -0.158px;

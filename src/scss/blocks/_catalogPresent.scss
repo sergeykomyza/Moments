@@ -1,8 +1,119 @@
+:root{
+  --paddingLeftCatalog: 56.4rem;
+  @include mediaWidth1{
+    --paddingLeftCatalog: 5rem;
+  }
+}
+
 .catalog-present{
+
+  padding-top: 8rem;
+  padding-bottom: 9.5rem;
+
+  @include mediaWidth1{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  &__padding{
+    padding-left: var(--paddingLeftCatalog);
+  }
 
   &__box{
     width: 160rem;
     margin: 0 auto;
+    @include mediaWidth1{
+      width: 35.3rem;
+    }
+  }
+
+  &__title{
+    margin-bottom: 7rem;
+    font-size: 11.5rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1.15px;
+    text-transform: uppercase;
+    span{
+      line-height: 0.55;
+    }
+    @include mediaWidth1{
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      letter-spacing: 0.25px;
+    }
+  }
+
+  &__text{
+    margin-bottom: 7rem;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.32px;
+    &--marginbottom{
+      margin-bottom: 11.2rem;
+      @include mediaWidth1{
+        margin-bottom: 5rem;
+      }
+    }
+    &--mobilemargin{
+      @include mediaWidth1{
+        display: block;
+        margin-left: -5rem;
+      }
+    }
+    @include mediaWidth1{
+      font-size: 1.6rem;
+      line-height: normal;
+      letter-spacing: 0.16px;
+    }
+  }
+
+  &__fotobox{
+    position: relative;
+    margin-bottom: 7rem;
+    @include mediaWidth1{
+      margin-bottom: 9rem;
+    }
+  }
+
+  &__decor{
+    position: absolute;
+    top: -7rem;
+    left: -42rem;
+    width: 17.5rem;
+    @include mediaWidth1{
+      top: -4.7rem;
+      left: -4.8rem;
+      width: 15.3rem;
+    }
+  }
+
+  &__fototext{
+    position: absolute;
+    bottom: 12rem;
+    left: -55.5rem;
+    font-size: 6.5rem;
+    font-weight: 500;
+    letter-spacing: -0.65px;
+    text-transform: uppercase;
+    @include mediaWidth1{
+      bottom: -6rem;
+      left: -5rem;
+      font-size: 2.5rem;
+      letter-spacing: 0.25px;
+    }
+    &--paddingmobile{
+      @include mediaWidth1{
+        padding-left: var(--paddingLeftCatalog);
+      }
+    }
+  }
+
+  &__foto{
+    width: 60.3rem;
+    @include mediaWidth1{
+      width: 30rem;
+    }
   }
 
 }
