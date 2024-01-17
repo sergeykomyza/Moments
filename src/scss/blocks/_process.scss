@@ -1,0 +1,119 @@
+:root{
+  @include mediaWidth1{
+    --paddingLeftProcess: 5rem;
+  }
+}
+
+.process{
+
+  padding-top: 10rem;
+  padding-bottom: 15.4rem;
+
+  @include mediaWidth1{
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+
+  &__box{
+    width: 160rem;
+    margin: 0 auto;
+    @include mediaWidth1{
+      width: 35.3rem;
+    }
+  }
+
+  &__row{
+    display: flex;
+    gap: 10.4rem;
+    @include mediaWidth1{
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+
+  &__title{
+    &--mobilepadding{
+      display: block;
+      padding-left: var(--paddingLeftProcess);
+    }
+  }
+
+  &__fotobox{
+    position: relative;
+    padding-left: var(--paddingLeftProcess);
+  }
+
+  &__foto{
+    width: 56.3rem;
+    @include mediaWidth1{
+      width: 30rem;
+    }
+  }
+
+  &__textbox{
+    position: absolute;
+    left: 0;
+    top: 8rem;
+    width: 87.2rem;
+    @include mediaWidth1{
+      top: 2.7rem;
+      width: 100%;
+    }
+  }
+
+  &__textbox2{
+    position: relative;
+    width: 89.5rem;
+    margin-top: -7.4rem;
+    margin-bottom: 11.2rem;
+    @include mediaWidth1{
+      width: 100%;
+      margin-top: 7.3rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__decor{
+    position: absolute;
+    right: -66.9rem;
+    bottom: 1rem;
+    width: 32.3rem;
+    @include mediaWidth1{
+      width: 15.3rem;
+      right: 20rem;
+      bottom: 23rem;
+    }
+  }
+
+  &__text{
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.32px;
+    @include mediaWidth1{
+      font-size: 1.6rem;
+      line-height: normal;
+      letter-spacing: 0.16px;
+    }
+    &--margin{
+      margin-bottom: 3.9rem;
+    }
+    &--mobilepadding{
+      padding-left: var(--paddingLeftProcess);
+    }
+    &--mobilepadding2{
+      display: block;
+      padding-left: var(--paddingLeftProcess);
+      @include mediaWidth1{
+        padding-top: 3rem;
+      }
+    }
+  }
+
+  &__buttonbox{
+    margin-left: 57.4rem;
+    @include mediaWidth1{
+      margin-left: 8.7rem;
+    }
+  }
+
+}

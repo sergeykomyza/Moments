@@ -24,6 +24,7 @@
 
 .noise-bg{
 	position: relative;
+  background: url('../img/noise.png');
 }
 .noise{
   position: absolute;
@@ -87,6 +88,12 @@
     padding: 0 0.9rem;
     font-size: 1.3rem;
     border: 1px solid var(--color-1);
+    &-2{
+      border: none;
+    }
+  }
+  &-2{
+    border: none;
   }
   &__line{
     position: absolute;
