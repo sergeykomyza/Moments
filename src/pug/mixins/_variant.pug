@@ -1,0 +1,13 @@
+mixin variant(accent, price, priceOld, list)
+	div(class=`variant ${accent == true ? 'accent' : ' '}`)
+		if(accent == true)
+			img.accent__bg(src="img/services/accent-bg.png", alt="@")
+		.variant__head
+			.variant__name «Признание»
+			.variant__price
+				span(class=`variant__pricetext ${accent == true ? 'variant__pricetext--accent' : ''}`) стоимость
+				span.variant__pricesum=`${price} р`
+				span(class=`variant__priceold ${accent == true ? 'variant__priceold--accent' : ''}`)=`${priceOld}`
+		ul.variant__list
+			each item in list 
+				li.variant__listitem= item

@@ -1,0 +1,51 @@
+:root{
+  --paddingLeftService: 56.8rem;
+  @include mediaWidth1{
+    --paddingLeftService: 5.2rem;
+  }
+}
+
+.service-info{
+
+  &__box{
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    padding-left: 16.2rem;
+    padding-right: 10rem;
+    @include mediaWidth1{
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  &__text{
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.32px;
+    @include mediaWidth1{
+      font-size: 1.6rem;
+      line-height: normal;
+      letter-spacing: 0.16px;
+    }
+    &:not(:last-child){
+      margin-bottom: 4rem;
+      @include mediaWidth1{
+        margin-bottom: 3rem;
+      }
+    }
+    &--desktopPadding{
+      padding-left: 56.8rem;
+      @include mediaWidth1{
+        padding-left: 0;
+      }
+    }
+    &--mobilePadding{
+      @include mediaWidth1{
+        padding-left: 5.2rem;
+      }
+    }
+  }
+
+}
