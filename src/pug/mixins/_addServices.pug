@@ -1,0 +1,6 @@
+mixin addServices(list)
+	ul.add-services__list 
+		each elem in list
+			li.add-services__listitem
+				span.add-services__name=`${elem.name} - ` 
+				b.add-services__price=`${elem.price}`

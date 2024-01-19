@@ -1,0 +1,55 @@
+.add-services{
+
+  margin-bottom: 16rem;
+  @include mediaWidth1{
+    margin-bottom: 9rem;
+  }
+
+  &__box{
+    width: 160rem;
+    margin: 0 auto;
+    @include mediaWidth1{
+      width: 35.3rem;
+    }
+  }
+
+  &__title{
+    margin-bottom: 5rem;
+    @include mediaWidth1{
+      margin-bottom: 3rem;
+    }
+    &--padding{
+      display: block;
+      padding-left: 56.8rem;
+      @include mediaWidth1{
+        padding-left: 5.3rem;
+      }
+    }
+  }
+
+  &__list{
+    margin-bottom: 13.5rem;
+    @include mediaWidth1{
+      margin-bottom: 5.5rem;
+    }
+  }
+
+  &__listitem{
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.28px;
+    @include mediaWidth1{
+      font-size: 1.6rem;
+      line-height: normal;
+      letter-spacing: 0.16px;
+    }
+  }
+
+  &__buttonbox{
+    padding-left: 6rem;
+    @include mediaWidth1{
+      padding-left: 2.6rem;
+    }
+  }
+
+}

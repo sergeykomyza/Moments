@@ -1,0 +1,18 @@
+.service{
+
+  &-reviews{
+    margin-bottom: 25rem;
+    @include mediaWidth1{
+      margin-bottom: 10rem;
+    }
+    &__title{
+      margin-bottom: 10.2rem;
+      padding-left: 16.2rem;
+      @include mediaWidth1{
+        margin-bottom: 3rem;
+        padding-left: 7rem;
+      }
+    }
+  }
+
+}

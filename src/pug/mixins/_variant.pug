@@ -1,4 +1,4 @@
-mixin variant(accent, price, priceOld, list)
+mixin variant(accent, price, priceOld, list, add)
 	div(class=`variant ${accent == true ? 'accent' : ' '}`)
 		if(accent == true)
 			img.accent__bg(src="img/services/accent-bg.png", alt="@")
@@ -11,3 +11,11 @@ mixin variant(accent, price, priceOld, list)
 		ul.variant__list
 			each item in list 
 				li.variant__listitem= item
+		if(add)
+			p.variant__add= add
+		if(accent == true)
+			.variant__buttonbox
+				include ./../layouts/_buttonHochu.pug
+		else 
+			.variant__buttonbox
+				include ./../layouts/_buttonHochu2.pug

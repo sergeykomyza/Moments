@@ -1,0 +1,19 @@
+section.add-services 
+	.add-services__box
+		h3.section-title.add-services__title чем еще можно удивить #[span.add-services__title--padding любимую?]
+		+addServices([
+			{name: 'Продление свидания на 1 ч', price: '10 000 р'},
+			{name: 'Авторский букет цветов', price: 'от 6 000 р'},
+			{name: 'Профессиональная фотосессия', price: 'от 6 000 р/час'},
+			{name: 'Видеосъемка и монтаж ролика', price: 'от 9 500 р/час'},
+			{name: 'Живая музыка (скрипка,саксофон)', price: 'от 5 500 р'},
+			{name: 'Охапка воздушных шаров', price: 'от 8 000 р'},
+			{name: 'Декор маяка живыми цветами и насыпными свечами', price: 'от 39 000 р'},
+			{name: 'Иллюзионист, появляющий кольцо', price: '10 000 р'},
+			{name: 'Мистический квест', price: 'от 20 000 р'},
+			{name: 'Горящие огненные буквы “Выходи за меня!”', price: '32 000 р'},
+			{name: 'Запуск салюта', price: 'от 20 000 р'},
+			{name: 'Прогулка на яхте от маяка', price: 'от 35 000 р'}
+		])
+		.add-services__buttonbox 
+			include ./../layouts/_buttonPosmotretRealizovannoe.pug
