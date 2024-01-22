@@ -1,0 +1,19 @@
+.popup#popup-form
+	.popup__body.animate__animated
+		button.popup__close.js-popupClose 
+			img(src="img/svg/close.svg", alt="@")
+		h5.popup__title Организовать предложение руки и сердца? #[br] не проблема!
+		p.popup__tagtitle Оставьте заявку и мы с вами свяжемся
+		form.form(action="#")
+			input.form__input(type="text" name="name" placeholder="Имя") 
+			input.form__input.js-maskPhone(type="text" name="phone" placeholder="Номер телефона") 
+			.select 
+				input.select__value(type="hidden" name="service" value="Маяк / Признание")
+				.select__header
+					.select__current Маяк / Признание
+					img.select__icon(src="img/svg/select-arrow.svg", alt="@")
+				.select__body 
+					each item in ['Маяк / Признание', 'Апартаменты', 'Вертолет', 'Кинотеатр', 'Флешмоб', 'Воздушный шар', 'Яхта']
+						.select__item(data-value= item)= item
+			.form__button Отправить
+			

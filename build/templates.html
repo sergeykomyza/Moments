@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
@@ -14,7 +15,7 @@
     <div class="templates">
       <div class="dark-bg">
         <div class="button-box">
-          <button class="button">Выбрать сценарий</button>
+          <button class="button js-popupOpen" data-popup="popup" data-src="#popup-form">Выбрать сценарий</button>
           <svg class="button__line" viewBox="0 0 593 147" fill="none">
             <path d="M401.298 2C401.298 2 324.293 13.0373 274.634 17.8611C216.901 23.4692 126.31 27.4613 126.31 27.4613C126.31 27.4613 251.767 25.0755 332.08 27.4613C433.821 30.4836 592 44.992 592 44.992C592 44.992 388.863 37.3697 259.566 48.0878C176.761 54.9519 48.6161 73.9665 48.6161 73.9665C48.6161 73.9665 167.209 67.0004 243.085 70.2099C288.45 72.1288 358.919 79.3927 358.919 79.3927C358.919 79.3927 275.832 70.1886 222.367 70.6101C164.915 71.0631 75.9266 83.1492 75.9266 83.1492C75.9266 83.1492 116.286 82.4073 141.848 85.2362C162.496 87.5213 194.115 94.419 194.115 94.419C194.115 94.419 159.649 95.5316 137.611 96.9234C115.69 98.3077 81.577 101.515 81.577 101.515L133.844 117.793L15.6552 121.132L90.9944 134.072C90.9944 134.072 63.5921 134.396 46.2618 136.576C28.7261 138.782 2 145.342 2 145.342" stroke="#E3DED8" stroke-width="2.50439" stroke-linecap="round"></path>
           </svg>
@@ -47,6 +48,33 @@
           <svg class="button-3__line" viewBox="0 0 167 67" fill="none">
             <path d="M112.668 1C112.668 1 91.1328 5.90047 77.245 8.0422C61.0994 10.5321 35.7646 12.3046 35.7646 12.3046C35.7646 12.3046 70.85 11.2453 93.3105 12.3046C121.764 13.6465 166 24.084 166 24.084C166 24.084 109.19 18.4798 73.0311 23.2385C49.8738 26.2861 14.0367 34.7284 14.0367 34.7284C14.0367 34.7284 47.2024 31.6356 68.4222 33.0606C81.109 33.9125 100.816 37.1376 100.816 37.1376C100.816 37.1376 77.5802 33.0511 62.6281 33.2382C46.5609 33.4394 21.6744 38.8055 21.6744 38.8055C21.6744 38.8055 32.9614 38.4761 40.1101 39.7321C45.8846 40.7467 54.7271 43.8092 54.7271 43.8092C54.7271 43.8092 45.0882 44.3032 38.925 44.9211C32.7948 45.5357 23.2546 46.9596 23.2546 46.9596L37.8715 54.1872L4.81884 55.6697L25.8883 61.4147C25.8883 61.4147 18.2249 61.5587 13.3783 62.5266C8.47425 63.506 1 66.4184 1 66.4184" stroke="#232323" stroke-width="1.11231" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
+        </div>
+        <div class="popup" id="popup-form">
+          <div class="popup__body animate__animated">
+            <button class="popup__close js-popupClose"> <img src="img/svg/close.svg" alt="@"/></button>
+            <h5 class="popup__title">Организовать предложение руки и сердца? <br/> не проблема!</h5>
+            <p class="popup__tagtitle">Оставьте заявку и мы с вами свяжемся</p>
+            <form class="form" action="#">
+              <input class="form__input" type="text" name="name" placeholder="Имя"/>
+              <input class="form__input js-maskPhone" type="text" name="phone" placeholder="Номер телефона"/>
+              <div class="select"> 
+                <input class="select__value" type="hidden" name="service" value="Маяк / Признание"/>
+                <div class="select__header">
+                  <div class="select__current">Маяк / Признание</div><img class="select__icon" src="img/svg/select-arrow.svg" alt="@"/>
+                </div>
+                <div class="select__body"> 
+                  <div class="select__item" data-value="Маяк / Признание">Маяк / Признание</div>
+                  <div class="select__item" data-value="Апартаменты">Апартаменты</div>
+                  <div class="select__item" data-value="Вертолет">Вертолет</div>
+                  <div class="select__item" data-value="Кинотеатр">Кинотеатр</div>
+                  <div class="select__item" data-value="Флешмоб">Флешмоб</div>
+                  <div class="select__item" data-value="Воздушный шар">Воздушный шар</div>
+                  <div class="select__item" data-value="Яхта">Яхта</div>
+                </div>
+              </div>
+              <div class="form__button">Отправить</div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
