@@ -24,12 +24,12 @@
 // });
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ МАСКА ДЛЯ ИНПУТОВ (https://github.com/RobinHerbots/Inputmask)
-const inputMask = () => {
-    $(".js-maskPhone").inputmask({
-        mask: "+ 7 (999) 999-99-99",
-        clearIncomplete: true
-    });
-}
+// const inputMask = () => {
+//     $(".js-maskPhone").inputmask({
+//         mask: "+ 7 (999) 999-99-99",
+//         clearIncomplete: true
+//     });
+// }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ СЛАЙДЕР SWIPER (https://swiperjs.com/get-started) 
 const sliders = () => {
@@ -184,7 +184,7 @@ const map = () => {
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INIT
-inputMask()
+// inputMask()
 sliders()
 customSelect()
 popup()
